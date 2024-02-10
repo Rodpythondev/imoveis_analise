@@ -107,7 +107,7 @@ def portfolio_density(data, geofile):
 
 
 
-    geofile = geofile[geofile['ZIP'].isin(df['zipcode'].tolist())]
+    geofile = geofile[geofile['ZIP'].isin(df['ZIP'].tolist())]
 
     region_price_map = folium.Map(location=[data['lat'].mean(),
                                             data['long'].mean()],
@@ -213,7 +213,7 @@ def attributesr_distribution(data):
 if  __name__ == '__main__':
     # ETL
     # data extration
-    url = 'https://gis.marlborough.govt.nz/server/rest/services/OpenData/OpenData2/MapServer/12/query?outFields=*&where=1%3D1&f=geojson'
+    url = 'https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds186_fnu/FeatureServer/0/query?outFields=*&where=1%3D1&f=geojson'
     geofile = get_geofile(url)
     data = get_data('kc_house_data.csv')
     # transformation
