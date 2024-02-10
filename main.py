@@ -9,8 +9,8 @@ import seaborn as sns
 import plotly.express as px
 from datetime import datetime
 st.set_page_config(layout='wide')
-st.title('House Rocket Company')
-st.markdown('Welcome to House Rocket Data Analysis')
+st.title('Tste')
+st.markdown(' Data Analysis')
 st.header('Load data')
 
 @st.cache(allow_output_mutation=True)
@@ -107,7 +107,7 @@ def portfolio_density(data, geofile):
 
 
 
-    geofile = geofile[geofile['ZIP'].isin(df['zip'].tolist())]
+    geofile = geofile[geofile['ZIP'].isin(df['zipcode'].tolist())]
 
     region_price_map = folium.Map(location=[data['lat'].mean(),
                                             data['long'].mean()],
