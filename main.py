@@ -1,5 +1,5 @@
 
-import funcoes_domesticas_st as fd
+
 import streamlit as st
 import pandas as pd
 import numpy as np
