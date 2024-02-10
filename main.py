@@ -213,7 +213,7 @@ def attributesr_distribution(data):
 if  __name__ == '__main__':
     # ETL
     # data extration
-    url = 'https://opendata.arcgis.com/datasets/83fc2e72903343aabff6de8cb445b81c_2.geojson'
+    url = 'https://gis.marlborough.govt.nz/server/rest/services/OpenData/OpenData2/MapServer/12/query?outFields=*&where=1%3D1&f=geojson'
     geofile = get_geofile(url)
     data = get_data('kc_house_data.csv')
     # transformation
