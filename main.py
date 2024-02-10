@@ -290,12 +290,12 @@ if __name__ == '__main__':
 
   # ETL
   # Data Extraction
-  dfhouses = fd.load_data(data_url='dados/originais/kc_house_data.csv.zip', date_f='date')
+  # dfhouses = fd.load_data(data_url='dados/originais/kc_house_data.csv.zip', date_f='date')
   geourl = 'https://opendata.arcgis.com/datasets/83fc2e72903343aabff6de8cb445b81c_2.geojson'
   geofile = fd.load_geofile(geourl)
 
   # Transformation
-  dfhouses = set_feature(dfhouses)
+  # dfhouses = set_feature(dfhouses)
 
   overview_data(dfhouses)
 
