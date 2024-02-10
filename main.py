@@ -213,7 +213,7 @@ def attributesr_distribution(data):
 if  __name__ == '__main__':
     # ETL
     # data extration
-    url = 'https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds186_fnu/FeatureServer/0/query?outFields=*&where=1%3D1&f=geojson'
+    # url = 'https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds186_fnu/FeatureServer/0/query?outFields=*&where=1%3D1&f=geojson'
     geofile = get_geofile(url)
     data = get_data('kc_house_data.csv')
     # transformation
