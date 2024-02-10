@@ -107,7 +107,7 @@ def portfolio_density(data, geofile):
 
 
 
-    geofile = geofile[geofile['ZIP'].isin(df['ZIP'].tolist())]
+    geofile = geofile[geofile['ZIP'].isin(df['zip'].tolist())]
 
     region_price_map = folium.Map(location=[data['lat'].mean(),
                                             data['long'].mean()],
